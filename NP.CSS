@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header .logo {
+  width: 150px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+/* CITATION */
+.citation {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e5e5d8;
+  font-style: italic;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro .stand {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.cta {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #8bc34a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* NOS VALEURS */
+.nos-valeurs {
+  padding: 2rem;
+  text-align: center;
+}
+
+.nos-valeurs .valeurs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.nos-valeurs img {
+  width: 100px;
+  height: auto;
+  margin: 0.5rem;
+}
+
+/* NOS BIJOUX */
+.nos-bijoux {
+  padding: 2rem;
+  text-align: center;
+}
+
+.bijoux-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.bijou {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+/* CREATEURS */
+.createurs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.createur-img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer .social img {
+  width: 40px;
+  height: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .intro {
+    padding: 1rem;
+  }
+
+  .nos-valeurs .valeurs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bijoux-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
