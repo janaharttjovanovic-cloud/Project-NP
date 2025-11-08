@@ -15,13 +15,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.6rem 1.5rem;
 }
 
+
 .header .logo {
-  width: 150px;
+  width: 180px;
   height: auto;
 }
+
 
 .navbar {
   display: flex;
@@ -124,15 +126,17 @@ body {
 /* CREATEURS */
 .createurs {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
   padding: 2rem;
+  gap: 2rem;
 }
 
-.createur-img {
-  width: 100%;
-  max-width: 500px;
-  margin-top: 1rem;
+.createur-img{
+  width: 250px;
+  height: 350px;
+  margin: 0.5rem;
 }
 
 /* FOOTER */
