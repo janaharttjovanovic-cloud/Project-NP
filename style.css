@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,57 +6,53 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #000;
-  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #f3efe7; /* soft beige background */
 }
 
-/* HEADER */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1.5rem;
+  padding: 1.2rem 3rem;
+  background-color: #f3efe7;
 }
-
 
 .header .logo {
   width: 180px;
   height: auto;
 }
 
-
 .navbar {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #000;
+  color: #444;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.burger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #000;
+.navbar a:hover {
+  color: #8bc34a;
 }
 
 /* CITATION */
 .citation {
+  background-color: #e0e0d0;
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 2rem;
-  background-color: #e5e5d8;
   font-style: italic;
+  font-size: 1.2rem;
+  color: #333;
+  border-top: 2px solid #d8d4c5;
+  border-bottom: 2px solid #d8d4c5;
 }
 
 /* INTRO */
@@ -63,99 +60,170 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+  background-color: #f3efe7;
 }
 
 .intro .stand {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
 }
 
 .cta {
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #8bc34a;
+  padding: 0.9rem 2rem;
+  background-color: #1c6f6e;
   color: #fff;
   border: none;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background-color: #145453;
 }
 
 /* NOS VALEURS */
 .nos-valeurs {
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+  background-color: #f3efe7;
+}
+
+.nos-valeurs h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 
 .nos-valeurs .valeurs {
   display: flex;
   justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.nos-valeurs .valeurs p {
+  font-weight: 700;
+  color: #1c6f6e;
+}
+
+.valeurs-images {
+  display: flex;
+  justify-content: center;
   gap: 2rem;
-  margin: 1rem 0;
+  margin-top: 1.5rem;
 }
 
 .valeurs-images img {
-  width: 250px;
-  height: 350px;
-  margin: 0.5rem;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* NOS BIJOUX */
 .nos-bijoux {
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  background-color: #fff;
+}
+
+.nos-bijoux h2 {
+  text-align: left;
+  padding: 2rem 4rem 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #1c6f6e;
 }
 
 .bijoux-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
 }
 
 .bijou {
+  aspect-ratio: 1/1;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 1/1;
-  border-radius: 10px;
 }
 
 /* CREATEURS */
 .createurs {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 4rem;
+  background-color: #f3efe7;
+  flex-wrap: wrap;
 }
 
-.createur-img{
+.createurs-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.createurs-text h2 {
+  color: #1c6f6e;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.createurs-text p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.createur-img {
   width: 250px;
   height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
   margin: 0.5rem;
 }
 
 /* FOOTER */
 .footer {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  text-align: center;
+  background-color: #1c6f6e;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .contact {
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer .social {
   display: flex;
-  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .footer .social img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
 }
 
 /* RESPONSIVE */
@@ -178,18 +246,22 @@ body {
 
   .burger {
     display: flex;
-  }
-
-  .intro {
-    padding: 1rem;
-  }
-
-  .nos-valeurs .valeurs {
     flex-direction: column;
-    gap: 1rem;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .createurs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valeurs-images {
+    flex-direction: column;
   }
 
   .bijoux-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
+
