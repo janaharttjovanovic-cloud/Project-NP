@@ -94,43 +94,27 @@ body {
   background-color: #145453;
 }
 
-.nos-valeurs {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #f3efe7;
+.valeurs-section {
+    text-align: center;
+    padding: 3rem 2rem;
 }
 
-.nos-valeurs h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
+.valeurs-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-.nos-valeurs .valeurs {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 2rem;
+.valeur {
+    width: 270px;
 }
 
-.nos-valeurs .valeurs p {
-  font-weight: 700;
-  color: #616320;
-}
-
-.valeurs-images {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.valeurs-images img {
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 50%;
+.v-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nos-bijoux {
