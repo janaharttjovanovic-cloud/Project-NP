@@ -107,28 +107,42 @@
         <img src="./images/img13.jpeg" class="createur-img">
     </section>
 
-        <footer class="footer">
-            <div class="contact">
-                <p>+33 6 35 30 32 28</p>
-                <p>2 Rue Vernier, 06000 Nice</p>
-                <p>S’ABONNER</p>
-                <p>ABONNEZ-VOUS POUR SUIVRE NOS ÉVÉNEMENTS :</p>
-                <p>E-MAIL</p>
-            </div>
-            <div class="social">
-                <a href="#"><img src="./images/pinterest.svg" alt="Pinterest"></a>
-                <a href="#"><img src="./images/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
-            </div>
-        </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>HORAIRES</h4>
+            <p>LUNDI-VENDREDI<br>10h - 19h</p>
+            <p>SAMEDI<br>10h - 20h</p>
+            <p>DIMANCHE ET FÉRIÉS FERMÉS</p>
+        </div>
 
-        <script>
-            const burger = document.querySelector(".burger");
-            const navbar = document.querySelector(".navbar");
-            burger.addEventListener("click", () => {
-                navbar.classList.toggle("active");
-            });
-        </script>
+        <div class="footer-col">
+            <h4>ADRESSE</h4>
+            <p>2 Rue Vernier,<br>06000 Nice</p>
+            <p>+33 6 35 30 32 28</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>ABONNEZ-VOUS POUR SUIVRE NOS ÉVÉNEMENTS :</h4>
+            <div>
+                <input type="email" placeholder="E-MAIL">
+                <button class="cta-footer">S'ABONNER</button>
+            </div>
+        </div>
+
+        <div class="social">
+            <img src="./images/facebook.svg">
+            <img src="./images/instagram.svg">
+            <img src="./images/pinterest.svg">
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector(".burger");
+        const menu = document.querySelector(".mobile-menu");
+
+        burger.onclick = () => menu.classList.toggle("open");
+    </script>
             
     </body>
 
