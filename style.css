@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -11,9 +12,7 @@ header {
     align-items: center;
 }
 
-.logo {
-    width: 180px;
-}
+.logo { width: 180px; }
 
 .navbar {
     display: flex;
@@ -40,7 +39,7 @@ header {
     background: #000;
 }
 
-/* MOBILE SIDEBAR MENU */
+/* MOBILE MENU */
 .mobile-menu {
     position: fixed;
     right: -200px;
@@ -61,9 +60,7 @@ header {
     text-decoration: none;
 }
 
-.mobile-menu.open {
-    right: 0;
-}
+.mobile-menu.open { right: 0; }
 
 /* CITATION */
 .citation {
@@ -84,12 +81,14 @@ header {
 
 /* INTRO */
 .intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
     padding: 4rem 5rem;
-    gap: 4rem;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: start;
     background: #d5d5c8;
+    justify-items: center;
+    align-items: center;
 }
 
 .intro-img {
@@ -97,55 +96,39 @@ header {
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
+    grid-row: 1 / 3;
+    margin-left: 200px;
 }
 
 .intro-textbox {
-    max-width: 400px;
-    padding-top: 2rem;
+    max-width: 500px;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .intro-textbox p {
     color: #0d5c6b;
     font-size: 1rem;
     line-height: 1.7;
-    margin-bottom: 1.5rem;
 }
 
-.cta {
-    margin-top: 1rem;
+.intro .cta {
     padding: 1rem 2rem;
     background: transparent;
     color: #0d5c6b;
     border: 2px solid #0d5c6b;
-    border-radius: 0;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 280px;
+    justify-self: start;
+    align-self: start;
+    justify-self: center;
 }
 
-.cta:hover {
+.intro .cta:hover {
     background: #0d5c6b;
     color: white;
-}
-
-@media(max-width: 850px) {
-    .intro {
-        flex-direction: column;
-        text-align: center;
-        padding: 3rem 2rem;
-        align-items: center;
-    }
-    
-    .intro-img {
-        width: 100%;
-        max-width: 400px;
-        height: 300px;
-    }
-    
-    .intro-textbox {
-        padding-top: 0;
-    }
 }
 
 /* VALEURS */
@@ -161,9 +144,7 @@ header {
     margin-top: 2rem;
 }
 
-.valeur {
-    width: 270px;
-}
+.valeur { width: 270px; }
 
 .v-img {
     width: 200px;
@@ -173,27 +154,17 @@ header {
 }
 
 /* BIJOUX GRID */
-
 .bijoux-section {
-  text-align: center;
-  padding: 3rem 0;
+    text-align: center;
+    padding: 3rem 0;
 }
 
-.bijoux-section h2 {
-    margin-bottom: 2rem;
-}
+.bijoux-section h2 { margin-bottom: 2rem; }
 
 .bijoux-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto repeat(2, 1fr);
-}
-
-.bijou {
-    aspect-ratio: 1;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
 }
 
 .bijou-full {
@@ -203,14 +174,16 @@ header {
     background-position: center;
 }
 
-.bijou:hover {
-    transform: scale(1.03);
+.bijou {
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
 }
 
-
+.bijou:hover { transform: scale(1.03); }
 
 /* CREATEURS */
-
 .createurs {
     display: flex;
     padding: 4rem 5rem;
@@ -248,6 +221,9 @@ header {
     color: #4a5d23;
     border: 2px solid #4a5d23;
     padding: 1rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .createurs-text .cta:hover {
@@ -263,7 +239,6 @@ header {
 }
 
 /* FOOTER */
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
@@ -300,9 +275,7 @@ header {
     cursor: pointer;
 }
 
-.footer-col .cta-footer:hover {
-    background: #3d4f1c;
-}
+.footer-col .cta-footer:hover { background: #3d4f1c; }
 
 .social {
     display: flex;
@@ -319,28 +292,49 @@ header {
     cursor: pointer;
 }
 
-/* RESPONSIVE */
-@media(max-width: 850px) {
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1100px) {
+    .intro {
+        grid-template-columns: 300px 1fr;
+    }
     
+    .intro .cta {
+        grid-column: 2;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 850px) {
     .navbar { display: none; }
     .burger { display: flex; }
 
     .intro {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
+        padding: 3rem 2rem;
+        justify-items: center;
+    }
+    
+    .intro-img {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+    
+    .intro .cta {
+        grid-column: auto;
+        width: 100%;
+        max-width: 350px;
     }
 
     .valeurs-wrapper {
         flex-direction: column;
+        align-items: center;
     }
 
-    .bijoux-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .bijou-full {
-      height: 180px;
-    }
+    .bijoux-grid { grid-template-columns: repeat(2, 1fr); }
+    .bijou-full { height: 180px; }
 
     .createurs {
         flex-direction: column;
@@ -353,7 +347,7 @@ header {
         max-width: 350px;
         height: 400px;
     }
-    
+
     .footer {
         grid-template-columns: 1fr;
         text-align: center;
@@ -364,13 +358,9 @@ header {
         margin-bottom: 1rem;
     }
     
-    .social {
-        grid-column: auto;
-    }
+    .social { grid-column: auto; }
 }
 
 @media (max-width: 480px) {
-    .bijoux-grid {
-        grid-template-columns: 1fr;
-    }
+    .bijoux-grid { grid-template-columns: 1fr; }
 }
