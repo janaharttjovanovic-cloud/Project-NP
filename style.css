@@ -95,7 +95,6 @@ body {
 }
 
 
-
 .intro-img {
     width: 100%;
     max-width: 400px;
@@ -110,35 +109,52 @@ body {
 }
 
 .intro-textbox p {
-    color: #0d5c6b;
+    color: #00687A;
     font-size: 1rem;
     line-height: 1.7;
 }
 
 .intro .cta {
     padding: 1rem 2rem;
-    background: transparent;
-    color: #0d5c6b;
-    border: 2px solid #0d5c6b;
-    font-weight: 600;
+    background: #00687A;
+    color: #E8E4DD;
+    border: 2px solid #00687A;
+    font-weight: 450;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 280px;
     justify-self: start;
     align-self: start;
     justify-self: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .intro .cta:hover {
-    background: #0d5c6b;
-    color: white;
+    background: #6799a3;
+    border: 2px solid #6799a3;
+    color: #fff;
 }
 
 .valeurs-section {
     text-align: center;
     padding: 3rem 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
+.valeurs-section p{
+    max-width: 180px;
+    margin: 0 auto;
+}
+.valeurs-section h2, 
+.valeurs-section h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 450;
+}
+
+.valeurs-section h3{
+    color: #A8781D;
+    padding-bottom: 7px;
+}
 .valeurs-wrapper {
     display: flex;
     gap: 2rem;
@@ -195,39 +211,54 @@ body {
 
 .createurs-text {
     max-width: 400px;
-    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
 }
 
 .createurs-text h2 {
     color: #616320; 
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 .createurs-text h3 {
     color: #616320;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 0.5px;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
 }
 
 .createurs-text p {
     color: #616320;
     line-height: 1.7;
-    margin-bottom: 2rem;
+    font-size: 16.5px;
+    margin-bottom: 9px;
+    text-align: right;
+    max-width: 390px;
 }
 
 .createurs-text .cta {
-    background: transparent;
-    color: #616320;
-    border: 2px solid #616320;
+    background: #A8781D;
+    color: #fff;
+    border: 2px solid #A8781D;
     padding: 1rem 2rem;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px; 
 }
 
 .createurs-text .cta:hover {
     background: #616320;
+    border: 2px solid #616320;
     color: white;
 }
 
@@ -235,7 +266,6 @@ body {
     width: 350px;
     height: 450px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .footer {
@@ -339,7 +369,17 @@ body {
         text-align: center;
         padding: 3rem 2rem;
     }
-    
+
+    .createurs-text {
+        align-items: center; 
+        text-align: center; 
+    }
+    .createurs-text h2, 
+    .createurs-text h3, 
+    .createurs-text p {
+        text-align: center; 
+    }
+
     .createur-img {
         width: 100%;
         max-width: 350px;
