@@ -2,9 +2,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    color: #616320;
+    line-height: 1.6;
+    background-color: #e8e4dd; 
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +27,6 @@ header {
     color: black;
 }
 
-/* BURGER */
 .burger {
     display: none;
     flex-direction: column;
@@ -39,7 +40,26 @@ header {
     background: #000;
 }
 
-/* MOBILE MENU */
+.citation {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #616320;
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #E8E4DD;
+    border-top: 2px solid #E8E4DD;
+    border-bottom: 2px solid #E8E4DD;
+}
+
+.citation span {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 0.95rem;
+}
+
+
 .mobile-menu {
     position: fixed;
     right: -200px;
@@ -62,24 +82,6 @@ header {
 
 .mobile-menu.open { right: 0; }
 
-/* CITATION */
-.citation {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #4a5d23;
-    color: white;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
-.citation span {
-    display: block;
-    margin-top: 0.5rem;
-    font-style: normal;
-    font-size: 0.95rem;
-}
-
-/* INTRO */
 .intro {
     display: grid;
     grid-template-columns: 350px 1fr;
