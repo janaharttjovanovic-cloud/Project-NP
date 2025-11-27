@@ -24,7 +24,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
 }
 
@@ -89,6 +89,7 @@ body {
     gap: 3rem;
     padding: 4rem 5rem;
     align-items: start;
+    text-align: left;
     background: #E8E4DD;
     justify-items: center;
     align-items: center;
@@ -153,7 +154,6 @@ body {
     object-fit: cover;
 }
 
-/* BIJOUX GRID */
 .bijoux-section {
     text-align: center;
     padding: 3rem 0;
@@ -183,7 +183,6 @@ body {
 
 .bijou:hover { transform: scale(1.03); }
 
-/* CREATEURS */
 .createurs {
     display: flex;
     padding: 4rem 5rem;
@@ -238,7 +237,6 @@ body {
     border-radius: 8px;
 }
 
-/* FOOTER */
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
