@@ -89,10 +89,12 @@ body {
     gap: 3rem;
     padding: 4rem 5rem;
     align-items: start;
-    text-align: left;
     background: #E8E4DD;
+    justify-items: center;
     align-items: center;
 }
+
+
 
 .intro-img {
     width: 100%;
@@ -104,7 +106,7 @@ body {
 .intro-textbox {
     max-width: 500px;
     padding-top: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 .intro-textbox p {
@@ -240,7 +242,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     gap: 3rem;
-    background: #0d5c6b;
+    background: #00687A;
     color: white;
     padding: 3rem 4rem;
 }
@@ -266,7 +268,7 @@ body {
 
 .footer-col .cta-footer {
     padding: 0.8rem 1.5rem;
-    background: #4a5d23;
+    background: #A8781D;
     color: white;
     border: none;
     cursor: pointer;
