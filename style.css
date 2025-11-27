@@ -89,7 +89,7 @@ body {
     gap: 3rem;
     padding: 4rem 5rem;
     align-items: start;
-    background: #d5d5c8;
+    background: #E8E4DD;
     justify-items: center;
     align-items: center;
 }
@@ -132,7 +132,6 @@ body {
     color: white;
 }
 
-/* VALEURS */
 .valeurs-section {
     text-align: center;
     padding: 3rem 2rem;
@@ -293,7 +292,6 @@ body {
     cursor: pointer;
 }
 
-/* ========== RESPONSIVE ========== */
 @media (max-width: 1100px) {
     .intro {
         grid-template-columns: 300px 1fr;
