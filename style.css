@@ -190,7 +190,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background: #d5d5c8;
+    background: #E8E4DD;
 }
 
 .createurs-text {
@@ -199,7 +199,7 @@ body {
 }
 
 .createurs-text h2 {
-    color: #4a5d23;
+    color: #616320; 
     font-size: 1.8rem;
     margin-bottom: 2rem;
 }
@@ -211,15 +211,15 @@ body {
 }
 
 .createurs-text p {
-    color: #555;
+    color: #616320;
     line-height: 1.7;
     margin-bottom: 2rem;
 }
 
 .createurs-text .cta {
     background: transparent;
-    color: #4a5d23;
-    border: 2px solid #4a5d23;
+    color: #616320;
+    border: 2px solid #616320;
     padding: 1rem 2rem;
     font-weight: 600;
     cursor: pointer;
@@ -227,7 +227,7 @@ body {
 }
 
 .createurs-text .cta:hover {
-    background: #4a5d23;
+    background: #616320;
     color: white;
 }
 
