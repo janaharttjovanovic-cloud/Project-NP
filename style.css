@@ -7,11 +7,12 @@ body {
     background-color: #e8e4dd; 
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem 2rem;
     align-items: center;
+    background-color: #E8E4DD;
 }
 
 .logo { width: 180px; }
