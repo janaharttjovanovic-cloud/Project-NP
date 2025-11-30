@@ -151,9 +151,13 @@ body {
     font-weight: 450;
 }
 
+.valeurs-section h2{
+    font-size: xx-large
+}
+
 .valeurs-section h3{
     color: #A8781D;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 }
 .valeurs-wrapper {
     display: flex;
@@ -228,7 +232,7 @@ body {
 
 .createurs-text h3 {
     color: #616320;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     padding-bottom: 0.5px;
     text-align: right;
