@@ -122,11 +122,9 @@ body {
     font-weight: 450;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 280px;
-    justify-self: start;
-    align-self: start;
-    justify-self: center;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
 }
 
 .intro .cta:hover {
@@ -329,12 +327,6 @@ body {
     .intro {
         grid-template-columns: 300px 1fr;
     }
-    
-    .intro .cta {
-        grid-column: 2;
-        width: 100%;
-        max-width: 300px;
-    }
 }
 
 @media (max-width: 850px) {
@@ -354,12 +346,6 @@ body {
         height: 300px;
     }
     
-    .intro .cta {
-        grid-column: auto;
-        width: 100%;
-        max-width: 350px;
-    }
-
     .valeurs-wrapper {
         flex-direction: column;
         align-items: center;
