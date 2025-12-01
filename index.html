@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nakit & Priroda</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakit & Priroda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <header class="header">
-            <img class="logo" src="./images/logo.svg" alt="Logo Nakit & Priroda">
-            
-            <nav class="navbar">
-                <a href="#">A PROPOS</a>
-                <a href="#">BIJOUX</a>
-                <a href="#">CRÉATEURS</a>
-                <a href="#">CONTACT</a>
-            </nav>
-
-            <div class="burger">
-                <span></span><span></span><span></span>
-            </div>
-        </header>
-
-        <nav class="mobile-menu">
+<body>
+    <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="Logo Nakit & Priroda">
+        
+        <nav class="navbar">
             <a href="#">A PROPOS</a>
             <a href="#">BIJOUX</a>
             <a href="#">CRÉATEURS</a>
             <a href="#">CONTACT</a>
         </nav>
 
-        <section class="citation">
-            <p>« Le bijou est une sculpture intime, une œuvre d’art à l’échelle du corps. »</p>
-            <p> — René Lalique, joaillier et artiste de l’Art nouveau </p>
-        </section>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
 
+    <nav class="mobile-menu">
+        <a href="#">A PROPOS</a>
+        <a href="#">BIJOUX</a>
+        <a href="#">CRÉATEURS</a>
+        <a href="#">CONTACT</a>
+    </nav>
 
+    <section class="citation">
+        <p>« Le bijou est une sculpture intime, une œuvre d’art à l’échelle du corps. »</p>
+        <p> — René Lalique, joaillier et artiste de l’Art nouveau </p>
+    </section>
 
-        <section class="intro">
-            <img class="intro-img" src="./images/img1.jpeg" alt="Stand de bijoux">
-            <div class="intro-textbox">
-                <p class="intro-text">Notre galerie célèbre le bijou comme une œuvre vivante, inspirée par les éléments de la nature. Bois poli par le temps, reflets d’une rivière, éclat minéral d’une montagne : chaque création traduit un dialogue entre matière brute et délicatesse artisanale.</p><br><br>
-                <p class="intro-text">Chaque œuvre s’inscrit dans une démarche éthique et durable, façonnée à partir d’or équitable, de pierres éthiques et de matériaux recyclés.
-                Pensé comme un écrin, l’espace prolonge l’univers des artistes : un lieu où lumière, design et création ne font qu’un.</p>
-                <button class="cta">EN SAVOIR +</button>
-            </div>
-        </section>
+    <section class="intro">
+        <img class="intro-img" src="./images/img1.jpeg" alt="Stand de bijoux">
+        <div class="intro-textbox">
+            <p class="intro-text">Notre galerie célèbre le bijou comme une œuvre vivante, inspirée par les éléments de la nature. Bois poli par le temps, reflets d’une rivière, éclat minéral d’une montagne : chaque création traduit un dialogue entre matière brute et délicatesse artisanale.</p><br><br>
+            <p class="intro-text">Chaque œuvre s’inscrit dans une démarche éthique et durable, façonnée à partir d’or équitable, de pierres éthiques et de matériaux recyclés.
+            Pensé comme un écrin, l’espace prolonge l’univers des artistes : un lieu où lumière, design et création ne font qu’un.</p>
+            <button class="cta">EN SAVOIR +</button>
+        </div>
+    </section>
 
-        <section class="valeurs-section">
-            <h2>NOS VALEURS</h2>
+    <section class="valeurs-section">
+        <h2>NOS VALEURS</h2>
+
+        <div class="carousel-container">
+            <button class="nav-arrow prev" onclick="moveSlide(-1)">
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 28L2 15L16 2" stroke="#616320" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
 
             <div class="valeurs-wrapper">
-                <div class="valeur">
+                <div class="valeur active">
                     <img src="./images/img2.jpeg" class="v-img">
                     <h3>POÉSIE</h3>
                     <p>Nos bijoux sont conçus comme de véritables œuvres d’art, porteurs d’émotion et de sens.</p>
@@ -71,7 +76,14 @@
                     <p>Un artisanat soigné qui transforme la créativité en pièces uniques, élégantes et portables.</p>
                 </div>
             </div>
-        </section>
+
+            <button class="nav-arrow next" onclick="moveSlide(1)">
+                <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L16 15L2 28" stroke="#616320" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
 
     <section class="bijoux-section">
         <div class="bijoux-grid">
@@ -111,7 +123,7 @@
         <div class="footer-col">
             <h4>ADRESSE</h4>
             <p>2 Rue Vernier,<br>06000 Nice</p>
-            <p class="numero">+33 6 35 30 32 28</p>
+            <p>+33 6 35 30 32 28</p>
         </div>
 
         <div class="footer-col">
@@ -121,7 +133,7 @@
                 <button class="cta-footer">S'ABONNER</button>
             </div>
         </div>
-
+        
         <div class="social">
             <img src="./images/facebook.svg">
             <img src="./images/instagram.svg">
@@ -132,8 +144,23 @@
     <script>
         const burger = document.querySelector(".burger");
         const menu = document.querySelector(".mobile-menu");
-
         burger.onclick = () => menu.classList.toggle("open");
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".valeur");
+
+        function showSlide(index) {
+            if (index >= slides.length) { slideIndex = 0; }
+            else if (index < 0) { slideIndex = slides.length - 1; }
+            else { slideIndex = index; }
+
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[slideIndex].classList.add("active");
+        }
+
+        function moveSlide(n) {
+            showSlide(slideIndex + n);
+        }
     </script>
             
     </body>
