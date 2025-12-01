@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .burger span {
@@ -63,21 +64,24 @@ body {
 
 .mobile-menu {
     position: fixed;
-    right: -200px;
+    right: -100%;
     top: 0;
-    width: 200px;
+    width: 100%;
     height: 100vh;
-    background: white;
+    background: #E8E4DD;
     display: flex;
     flex-direction: column;
-    padding: 3rem 1rem;
-    transition: 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    z-index: 1000;
 }
 
 .mobile-menu a {
-    margin-bottom: 1rem;
-    color: black;
-    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
 }
 
@@ -372,7 +376,12 @@ body {
 
 @media (max-width: 850px) {
     .navbar { display: none; }
-    .burger { display: flex; }
+    .burger { display: block; }
+
+    .header {
+        position: relative;
+        z-index: 1001;
+    }
 
     .intro {
         grid-template-columns: 1fr;
