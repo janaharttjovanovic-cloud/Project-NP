@@ -14,10 +14,10 @@
         <img class="logo" src="./images/logo.svg" alt="Logo Nakit & Priroda">
     
         <nav class="navbar">
-            <a href="#">A PROPOS</a>
-            <a href="#">BIJOUX</a>
-            <a href="#">CRÉATEURS</a>
-            <a href="#">CONTACT</a>
+            <a href="#propos">A PROPOS</a>
+            <a href="#bijoux">BIJOUX</a>
+            <a href="#createurs">CRÉATEURS</a>
+            <a href="#contact">CONTACT</a>
         </nav>
 
         <div class="burger">
@@ -37,10 +37,10 @@
     </header>
 
     <nav class="mobile-menu">
-        <a href="#">A PROPOS</a>
-        <a href="#">BIJOUX</a>
-        <a href="#">CRÉATEURS</a>
-        <a href="#">CONTACT</a>
+        <a href="#propos">A PROPOS</a>
+        <a href="#bijoux">BIJOUX</a>
+        <a href="#createurs">CRÉATEURS</a>
+        <a href="#contact">CONTACT</a>
     </nav>
 
     <section class="citation">
@@ -48,7 +48,7 @@
         <p> — René Lalique, joaillier et artiste de l’Art nouveau </p>
     </section>
 
-    <section class="intro">
+    <section class="intro" id="propos">
         <img class="intro-img" src="./images/img1.jpeg" alt="Stand de bijoux">
         <div class="intro-textbox">
             <p class="intro-text">Notre galerie célèbre le bijou comme une œuvre vivante, inspirée par les éléments de la nature. Bois poli par le temps, reflets d’une rivière, éclat minéral d’une montagne : chaque création traduit un dialogue entre matière brute et délicatesse artisanale.</p><br><br>
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="bijoux-section">
+    <section class="bijoux-section" id="bijoux">
         <div class="bijoux-grid">
             <div class="bijou-full" style="background-image:url('./images/img5.jpeg')"></div>
             <div class="bijou" style="background-image:url('./images/img14.jpeg')"></div>
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="createurs">
+    <section class="createurs" id="createurs">
         <div class="createurs-text">
             <h2>NOS ARTISTES CRÉATEURS</h2>
             <h3>Marta Vela</h3>
@@ -123,7 +123,7 @@
         <img src="./images/img13.jpeg" class="createur-img" alt="photo-Marta-Vela">
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-col">
             <h4>HORAIRES</h4>
             <p>LUNDI-VENDREDI<br>10h - 19h</p>
@@ -155,7 +155,17 @@
     <script>
         const burger = document.querySelector(".burger");
         const menu = document.querySelector(".mobile-menu");
+        // Seleccionamos los enlaces del menú móvil
+        const menuLinks = document.querySelectorAll(".mobile-menu a");
+
         burger.onclick = () => menu.classList.toggle("open");
+
+        // Cerrar el menú al hacer clic en un enlace
+        menuLinks.forEach(link => {
+            link.onclick = () => {
+                menu.classList.remove("open");
+            };
+        });
 
         let slideIndex = 0;
         const slides = document.querySelectorAll(".valeur");
