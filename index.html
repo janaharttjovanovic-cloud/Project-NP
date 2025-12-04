@@ -170,12 +170,10 @@
     <script>
         const burger = document.querySelector(".burger");
         const menu = document.querySelector(".mobile-menu");
-        // Seleccionamos los enlaces del menú móvil
         const menuLinks = document.querySelectorAll(".mobile-menu a");
 
         burger.onclick = () => menu.classList.toggle("open");
 
-        // Cerrar el menú al hacer clic en un enlace
         menuLinks.forEach(link => {
             link.onclick = () => {
                 menu.classList.remove("open");
