@@ -449,17 +449,20 @@ body {
     }
 
     .bijoux-grid {
+        display: flex;
         flex-direction: column;
         gap:0;
-        display: flex;
-    }
-    .bijou-full { height: 180px; }
-    .bijou, .bijou-full {
-        width: 100%;
-        height: 350px;
     }
 
-    .bijoux-grid > div:nth-child(n+4){
+    .bijou, .bijou-full {
+        width: 100%;
+        height: auto; 
+        aspect-ratio: 1 / 1; 
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bijoux-grid > div:nth-child(n+5){
         display: none;
     }
 
@@ -471,7 +474,7 @@ body {
         color: #5D420F;
         border: none;
         font-family: 'Raleway', sans-serif;
-        font-size: 12 px;
+        font-size: 12px;
         font-weight: 600;
         letter-spacing: 1px;
         cursor: pointer;
@@ -577,6 +580,3 @@ body {
     .social { grid-column: auto; }
 }
 
-@media (max-width: 480px) {
-    .bijoux-grid { grid-template-columns: 1fr; }
-}
