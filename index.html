@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <meta name="description" content="Nakit & Priroda – Galerie de bijoux artisanaux inspirés par la nature, pièces uniques faites main par des créateurs.">
+    <meta name="keywords" content="bijoux artisanaux, bijoux faits main, créations naturelles, artisans créateurs, Nakit Priroda">
+ 
+    <!-- Performance -->
+    <link rel="preload" href="style.css" as="style">
+    
     <title>Nakit & Priroda</title>
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
@@ -16,6 +24,46 @@
 </head>
 
 <body>
+    <!-- SEO : H1 invisible pour Google -->
+    <h1 style="position:absolute; left:-9999px;">
+        Galerie de bijoux artisanaux – Nakit & Priroda
+    </h1>
+     <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="Logo Nakit & Priroda" loading="lazy">
+
+        <nav class="navbar">
+            <a href="#propos">A PROPOS</a>
+            <a href="#bijoux">BIJOUX</a>
+            <a href="#createurs">CRÉATEURS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img class="intro-img" src="./images/img1.jpeg" alt="Stand de bijoux" fetchpriority="high">
+    </section>
+
+    <section id="propos">
+        <h2>À propos</h2>
+        <img src="./images/img2.jpeg" class="v-img" alt="stand-bijou-poésie" loading="lazy">
+        <img src="./images/img3.jpeg" class="v-img" alt="nature-foret-serbienne" loading="lazy">
+    </section>
+
+    <section id="bijoux">
+        <h2>Nos bijoux</h2>
+        <img src="./images/img4.jpeg" class="v-img" alt="bijou-argile" loading="lazy">
+        <img src="./images/img5.jpeg" class="v-img" alt="boucles-oreilles-créateurs" loading="lazy">
+    </section>
+
+    <section id="createurs">
+        <h2>Nos créateurs</h2>
+        <img src="./images/img13.jpeg" class="createur-img" alt="photo-Marta-Vela" loading="lazy">
+        <img src="./images/img14.jpeg" class="createur-img" alt="photo-Davor-Petrović" loading="lazy">
+    </section>
+
+    <footer id="contact">
+        <p>Contact : info@nakitpriroda.com</p>
+    </footer>
     <header class="header">
         <img class="logo" src="./images/logo.svg" alt="Logo Nakit & Priroda">
     
