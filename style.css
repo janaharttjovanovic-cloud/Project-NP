@@ -524,7 +524,7 @@ body {
     .createurs-text h3 {
         order: 3;
         text-align: center;
-        padding-bottom: none;
+        padding-bottom: 0;
         margin-bottom: -5px;
         line-height: 1.2;
     }
